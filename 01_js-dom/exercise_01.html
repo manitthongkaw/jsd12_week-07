@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="jsdTag">JSD12 <span style="display:none;">Javascript</span></h1>
+    <script>
+      const changeTag = document.getElementById('jsdTag');
+      console.dir(jsdTag);
+      console.log(jsdTag.innerHTML);
+      console.log(jsdTag.innerText);
+      console.log(jsdTag.textContent);
+      changeTag.style.backgroundColor = "pink";
+      changeTag.style.fontWeight = 700;
+      changeTag.style.cssText = "width:fit-content; color:red; padding:8px 32px; border-radius:99px; margin:80px auto; background-color:#f5f5f5;";
+      changeTag.innerText = "Arm";
+      console.log(jsdTag);
+    </script>
+  </body>
+</html>

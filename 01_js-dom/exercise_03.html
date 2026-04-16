@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Count</h1>
+    <p id="countNumber">0</p>
+    <button id="buttonCount" onclick="count()">Click</button>
+    <script>
+      let number = 0;
+      const count = () => document.getElementById("countNumber").innerText = ++number;
+    </script>
+  </body>
+</html>

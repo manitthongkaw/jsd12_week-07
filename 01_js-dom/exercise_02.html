@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="jsdTag">JSD12 <span style="display:none;">Javascript</span></h1>
+    <button id="changeName" onclick="changeName()">Change text & CSS</button>
+    <script>
+      const changeName = () => {
+        const jsdTag = document.getElementById("jsdTag");
+        jsdTag.innerText = "ARM14 :D";
+        jsdTag.style.backgroundColor = "pink";
+        document.querySelector('#changeName').disabled = true;
+        document.querySelector('#changeName').innerText = "Disabled !";
+      };
+    </script>
+  </body>
+</html>
