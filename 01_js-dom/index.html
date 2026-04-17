@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poke API</title>
+    <title>Poke API - 14_Manit(Arm/อาม)</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="p-4">
@@ -24,21 +24,21 @@
           })
           .then((data) => {
             const div = document.createElement("div");
-            div.className =`itemlist w-40 relative`;
+            div.className = `itemlist w-40 relative`;
             pokeContainer.prepend(div);
 
             const h1  = document.createElement("h1");
-            h1.className =`text-lg capitalize text-center`;
+            h1.className = `text-lg capitalize text-center`;
             h1.innerText = data.name;
             document.querySelector(".itemlist").prepend(h1);
 
             const img = document.createElement("img");
-            img.className =`size-40 rounded-lg bg-slate-100`;
+            img.className = `size-40 rounded-lg bg-slate-100`;
             img.src = data.sprites.front_default;
             document.querySelector(".itemlist").prepend(img);
 
             const closeBtn = document.createElement("button");
-            closeBtn.className =`absolute top-2 right-2 bg-white hover:bg-red-100 text-red-600 px-2 rounded`;
+            closeBtn.className = `absolute top-2 right-2 bg-white hover:bg-red-100 text-red-600 px-2 rounded`;
             closeBtn.innerText = "X";
             document.querySelector(".itemlist").prepend(closeBtn);
             closeBtn.addEventListener("click", () => {
